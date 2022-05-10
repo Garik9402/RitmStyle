@@ -1,0 +1,138 @@
+@import 'reset.scss';
+@import 'fonts.scss';
+@import 'mixin.scss';
+// @include mq(xxl) {}
+// @include mq(xl) {}
+// @include mq(lg) {}
+// @include mq(md) {}
+// @include mq(sm) {}
+%Proxima-Nova400 {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    color: #FFFFFF;
+}
+
+%proxima-Nova600 {
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+%El-Messiri700 {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+body {
+    background-color: #162831;
+}
+
+.header-w {
+    width: 100%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    &__top {}
+    &__top-inner {
+        max-width: 1298px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo-link {}
+    &__logo {}
+    &__top-main {}
+    .nav {
+        &__list {
+            display: flex;
+        }
+        &__item {
+            list-style: none;
+            &:not(:first-child) {
+                margin-left: 50px;
+            }
+        }
+        &__item-link {
+            @extend %Proxima-Nova400;
+            text-decoration: none;
+            &:hover {
+                color: bisque;
+            }
+        }
+    }
+    &__top-button {}
+    .button {
+        display: inline-block;
+        padding: 9px 10px;
+        border-radius: 3px;
+        text-decoration: none;
+        @extend %proxima-Nova600;
+        &:hover {
+            background-color: antiquewhite;
+            color: #162831;
+            transition: all 0.4s ease;
+        }
+        &--color-blue {
+            background-color: #018ABE;
+        }
+    }
+    &__content {
+        max-width: 1298px;
+        width: 100%;
+        min-height: 600px;
+        background-image: url(../images/header__img.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    &__content-title {
+        margin-top: 136px;
+        max-width: 587px;
+        width: 100%;
+    }
+    &__title-top {
+        position: relative;
+        @extend %El-Messiri700;
+        text-align: center;
+        &::before {
+            content: '';
+            position: absolute;
+            background: url(../images/petal-left.png)no-repeat;
+            width: 28px;
+            height: 14px;
+            left: 94px;
+            top: 8px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background: url(../images/petal-right.png)no-repeat;
+            width: 28px;
+            height: 14px;
+            right: 94px;
+            top: 8px;
+        }
+    }
+    &__title-bottom {
+        @extend %El-Messiri700;
+        font-size: 64px;
+        line-height: 140%;
+        text-align: center;
+        margin-top: 40px;
+    }
+}

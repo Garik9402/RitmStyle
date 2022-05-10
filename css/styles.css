@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Lato:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Cn Lt';
+  src: url("ProximaNovaCond-Light.eot");
+  src: local("Proxima Nova Condensed Light"), local("ProximaNovaCond-Light"), url("ProximaNovaCond-Light.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-Light.woff") format("woff"), url("ProximaNovaCond-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.header .nav__item-link {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  color: #FFFFFF;
+}
+
+.header .button {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.header__title-top, .header__title-bottom {
+  font-family: 'El Messiri', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+body {
+  background-color: #162831;
+}
+
+.header-w {
+  width: 100%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__top-inner {
+  max-width: 1298px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .nav__item {
+  list-style: none;
+}
+
+.header .nav__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.header .nav__item-link {
+  text-decoration: none;
+}
+
+.header .nav__item-link:hover {
+  color: bisque;
+}
+
+.header .button {
+  display: inline-block;
+  padding: 9px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.header .button:hover {
+  background-color: antiquewhite;
+  color: #162831;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.header .button--color-blue {
+  background-color: #018ABE;
+}
+
+.header__content {
+  max-width: 1298px;
+  width: 100%;
+  min-height: 600px;
+  background-image: url(../images/header__img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__content-title {
+  margin-top: 136px;
+  max-width: 587px;
+  width: 100%;
+}
+
+.header__title-top {
+  position: relative;
+  text-align: center;
+}
+
+.header__title-top::before {
+  content: '';
+  position: absolute;
+  background: url(../images/petal-left.png) no-repeat;
+  width: 28px;
+  height: 14px;
+  left: 94px;
+  top: 8px;
+}
+
+.header__title-top::after {
+  content: '';
+  position: absolute;
+  background: url(../images/petal-right.png) no-repeat;
+  width: 28px;
+  height: 14px;
+  right: 94px;
+  top: 8px;
+}
+
+.header__title-bottom {
+  font-size: 64px;
+  line-height: 140%;
+  text-align: center;
+  margin-top: 40px;
+}
+/*# sourceMappingURL=styles.css.map */

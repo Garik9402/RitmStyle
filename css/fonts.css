@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Lato:wght@300&display=swap");
+@font-face {
+  font-family: 'Proxima Nova Cn Lt';
+  src: url("ProximaNovaCond-Light.eot");
+  src: local("Proxima Nova Condensed Light"), local("ProximaNovaCond-Light"), url("ProximaNovaCond-Light.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-Light.woff") format("woff"), url("ProximaNovaCond-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+/*# sourceMappingURL=fonts.css.map */
