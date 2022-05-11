@@ -30,7 +30,7 @@
   color: #FFFFFF;
 }
 
-.header__title-top, .header__title-bottom, .sessions .title, .sessions__item-left, .sessions__item-top, .sessions__item-bottom {
+.header__title-top, .header__title-bottom, .sessions__item-left, .sessions__item-top, .sessions__item-bottom, .title {
   font-family: 'El Messiri', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -173,47 +173,9 @@ body {
   margin: 0 auto;
 }
 
-.sessions .title-w {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .sessions__title {
   text-align: center;
   margin-bottom: 100px;
-}
-
-.sessions .title {
-  max-width: 336px;
-  width: 100%;
-  position: relative;
-  display: block;
-  font-size: 42px;
-}
-
-.sessions .title::before {
-  content: '';
-  position: absolute;
-  background: url(../images/petal-blue-left.png) no-repeat;
-  width: 28px;
-  height: 14px;
-  left: -72px;
-  top: 20px;
-}
-
-.sessions .title::after {
-  content: '';
-  position: absolute;
-  background: url(../images/petal-blue-right.png) no-repeat;
-  width: 28px;
-  height: 14px;
-  right: -72px;
-  top: 20px;
 }
 
 .sessions__items {
@@ -298,5 +260,55 @@ body {
 .sessions__item-right {
   max-width: 416px;
   width: 100%;
+}
+
+.title-w {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title {
+  position: relative;
+  display: block;
+  font-size: 42px;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  background: url(../images/petal-blue-left.png) no-repeat;
+  width: 28px;
+  height: 14px;
+  left: -72px;
+  top: 20px;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  background: url(../images/petal-blue-right.png) no-repeat;
+  width: 28px;
+  height: 14px;
+  right: -72px;
+  top: 20px;
+}
+
+.reviews-w {
+  width: 100%;
+}
+
+.reviews {
+  max-width: 1736px;
+  width: 100%;
+}
+
+.reviews__items {
+  max-width: inherit;
+  width: inherit;
 }
 /*# sourceMappingURL=styles.css.map */
