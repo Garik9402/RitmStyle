@@ -6,6 +6,14 @@
         // @include mq(lg) {}
         // @include mq(md) {}
         // @include mq(sm) {}
+        %Proxima-Nova300 {
+            font-family: 'Proxima Nova', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+        
         %Proxima-Nova400 {
             font-family: 'Proxima Nova', sans-serif;
             font-weight: 400;
@@ -18,6 +26,14 @@
             font-family: 'Proxima Nova', sans-serif;
             font-weight: 600;
             font-size: 13px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+        
+        %Proxima-Nova700 {
+            font-family: 'Proxima Nova', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
             line-height: 140%;
             color: #FFFFFF;
         }
@@ -72,10 +88,12 @@
                     }
                 }
             }
-            &__top-button {}
+            &__top-button {
+                text-align: center;
+            }
             .button {
                 display: inline-block;
-                padding: 9px 10px;
+                padding: 9px 15px;
                 border-radius: 3px;
                 text-decoration: none;
                 @extend %proxima-Nova600;
@@ -256,15 +274,37 @@
         .reviews {
             max-width: 1736px;
             width: 100%;
+            margin: 0 auto;
             &__title {}
+            .title-w {
+                margin-bottom: 100px;
+            }
             &__items {
                 max-width: inherit;
                 width: inherit;
+                display: flex;
+                justify-content: space-between;
             }
-            &__review {}
-            &__review-inner {}
-            &__review-clientname {}
-            &__review-text {}
+            &__review {
+                max-width: 500px;
+                width: 100%;
+                min-height: 276px;
+                background-color: #018ABE;
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+                // opacity: 0.3;
+            }
+            &__review-inner {
+                max-width: 410px;
+                width: 100%
+            }
+            &__review-clientname {
+                @extend %Proxima-Nova700;
+            }
+            &__review-text {
+                @extend %Proxima-Nova300;
+            }
             .dots-w {}
             .dot {}
         }
