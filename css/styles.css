@@ -30,7 +30,7 @@
   font-style: normal;
 }
 
-.reviews__review-text {
+.reviews__review-text, .description__massage-text, .description__hydrotherapy-text {
   font-family: 'Proxima Nova', sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -54,7 +54,7 @@
   color: #FFFFFF;
 }
 
-.reviews__review-clientname {
+.reviews__review-clientname, .description__massage-title, .description__hydrotherapy-title {
   font-family: 'Proxima Nova', sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -372,6 +372,7 @@ body {
           justify-content: center;
   border-radius: 10px;
   padding: 40px 0px 71px 0px;
+  margin-bottom: 60px;
 }
 
 .reviews__review:last-child {
@@ -390,5 +391,113 @@ body {
 
 .reviews__review-text {
   font-size: 10px;
+}
+
+.reviews .dots-w {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews .dot {
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF;
+  opacity: 0.4;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.reviews .dot:not(:first-child) {
+  margin-left: 20px;
+}
+
+.description-w {
+  width: 100%;
+  padding: 150px 0px;
+}
+
+.description {
+  max-width: 1076px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.description .title-w {
+  margin-bottom: 100px;
+}
+
+.description__items {
+  max-width: inherit;
+  width: inherit;
+}
+
+.description__items-top {
+  max-width: inherit;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.description__massage {
+  max-width: 466px;
+  width: 100%;
+  margin: 66px 0px 65px 0px;
+}
+
+.description__massage-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.description__massage-text {
+  font-size: 16px;
+}
+
+.description__itemstop-img {
+  max-width: 526px;
+  width: 100%;
+  height: 365px;
+}
+
+.description__items-bottom {
+  max-width: inherit;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description__itemsbottom-img {
+  max-width: 526px;
+  width: 100%;
+  height: 400px;
+}
+
+.description__hydrotherapy {
+  max-width: 466px;
+  width: 100%;
+  margin: 17px 0px 17px 0px;
+}
+
+.description__hydrotherapy-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.description__hydrotherapy-text {
+  font-size: 16px;
 }
 /*# sourceMappingURL=styles.css.map */

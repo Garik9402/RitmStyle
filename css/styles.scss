@@ -294,6 +294,7 @@
                 justify-content: center;
                 border-radius: 10px;
                 padding: 40px 0px 71px 0px;
+                margin-bottom: 60px;
                 // opacity: 0.3;
                 &:last-child {
                     padding-bottom: 57px;
@@ -312,6 +313,90 @@
                 @extend %Proxima-Nova300;
                 font-size: 10px;
             }
-            .dots-w {}
-            .dot {}
+            .dots-w {
+                width: inherit;
+                display: flex;
+                justify-content: center;
+            }
+            .dot {
+                width: 16px;
+                height: 16px;
+                background: #FFFFFF;
+                opacity: 0.4;
+                border-radius: 3px;
+                cursor: pointer;
+                &:not(:first-child) {
+                    margin-left: 20px;
+                }
+            }
+        }
+        
+        .description-w {
+            width: 100%;
+            padding: 150px 0px;
+        }
+        
+        .description {
+            max-width: 1076px;
+            width: 100%;
+            margin: 0 auto;
+            .title-w {
+                margin-bottom: 100px;
+            }
+            &__title {}
+            &__items {
+                max-width: inherit;
+                width: inherit;
+            }
+            &__items-top {
+                max-width: inherit;
+                width: inherit;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 100px;
+            }
+            &__massage {
+                max-width: 466px;
+                width: 100%;
+                margin: 66px 0px 65px 0px;
+            }
+            &__massage-title {
+                @extend %Proxima-Nova700;
+                font-size: 24px;
+                margin-bottom: 30px
+            }
+            &__massage-text {
+                @extend %Proxima-Nova300;
+                font-size: 16px;
+            }
+            &__itemstop-img {
+                max-width: 526px;
+                width: 100%;
+                height: 365px;
+            }
+            &__items-bottom {
+                max-width: inherit;
+                width: inherit;
+                display: flex;
+                justify-content: space-between;
+            }
+            &__itemsbottom-img {
+                max-width: 526px;
+                width: 100%;
+                height: 400px;
+            }
+            &__hydrotherapy {
+                max-width: 466px;
+                width: 100%;
+                margin: 17px 0px 17px 0px;
+            }
+            &__hydrotherapy-title {
+                @extend %Proxima-Nova700;
+                font-size: 24px;
+                margin-bottom: 30px
+            }
+            &__hydrotherapy-text {
+                @extend %Proxima-Nova300;
+                font-size: 16px;
+            }
         }
