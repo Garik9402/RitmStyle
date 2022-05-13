@@ -1,8 +1,24 @@
 @font-face {
-    font-family: 'Proxima Nova Cn Lt';
-    src: url('ProximaNovaCond-Light.eot');
-    src: local('Proxima Nova Condensed Light'), local('ProximaNovaCond-Light'), url('ProximaNovaCond-Light.eot?#iefix') format('embedded-opentype'), url('ProximaNovaCond-Light.woff') format('woff'), url('ProximaNovaCond-Light.ttf') format('truetype');
+    font-family: 'Proxima Nova';
+    src: url(../fonts/AnyConv.com__ProximaNova-Light.woff2), url(../fonts/ProximaNova-Light.woff);
     font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(../fonts/AnyConv.com__ProximaNova-Regular.woff2), url(../fonts/AnyConv.com__ProximaNova-Regular.woff2);
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(../fonts/AnyConv.com__ProximaNova-Bold.woff2), url(../fonts/ProximaNova-Bold.woff);
+    font-weight: 700;
+    font-display: swap;
     font-style: normal;
 }
 

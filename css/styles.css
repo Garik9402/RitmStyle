@@ -7,10 +7,26 @@
 }
 
 @font-face {
-  font-family: 'Proxima Nova Cn Lt';
-  src: url("ProximaNovaCond-Light.eot");
-  src: local("Proxima Nova Condensed Light"), local("ProximaNovaCond-Light"), url("ProximaNovaCond-Light.eot?#iefix") format("embedded-opentype"), url("ProximaNovaCond-Light.woff") format("woff"), url("ProximaNovaCond-Light.ttf") format("truetype");
+  font-family: 'Proxima Nova';
+  src: url(../fonts/AnyConv.com__ProximaNova-Light.woff2), url(../fonts/ProximaNova-Light.woff);
   font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(../fonts/AnyConv.com__ProximaNova-Regular.woff2), url(../fonts/AnyConv.com__ProximaNova-Regular.woff2);
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url(../fonts/AnyConv.com__ProximaNova-Bold.woff2), url(../fonts/ProximaNova-Bold.woff);
+  font-weight: 700;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -355,10 +371,24 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 10px;
+  padding: 40px 0px 71px 0px;
+}
+
+.reviews__review:last-child {
+  padding-bottom: 57px;
 }
 
 .reviews__review-inner {
   max-width: 410px;
   width: 100%;
+}
+
+.reviews__review-clientname {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.reviews__review-text {
+  font-size: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
