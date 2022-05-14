@@ -38,7 +38,7 @@
   color: #FFFFFF;
 }
 
-.header .nav__item-link, .price__sesson {
+.header .nav__item-link, .price__sesson, .record__description-addres, .record__description-metro, .record__description-record {
   font-family: 'Proxima Nova', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -46,7 +46,7 @@
   color: #FFFFFF;
 }
 
-.header .button {
+.button {
   font-family: 'Proxima Nova', sans-serif;
   font-weight: 600;
   font-size: 13px;
@@ -62,7 +62,7 @@
   color: #FFFFFF;
 }
 
-.header__title-top, .header__title-bottom, .sessions__item-left, .sessions__item-top, .sessions__item-bottom, .title, .price__summ, .price__giftcertificate-subtitle {
+.header__title-top, .header__title-bottom, .sessions__item-left, .sessions__item-top, .sessions__item-bottom, .title, .price__summ, .price__giftcertificate-subtitle, .record__title {
   font-family: 'El Messiri', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -121,22 +121,8 @@ body {
   color: bisque;
 }
 
-.header__top-button {
-  text-align: center;
-}
-
 .header .button {
-  display: inline-block;
-  padding: 9px 15px;
-  border-radius: 3px;
-  text-decoration: none;
-}
-
-.header .button:hover {
-  background-color: antiquewhite;
-  color: #162831;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  color: #FFFFFF;
 }
 
 .header .button--color-blue {
@@ -196,6 +182,23 @@ body {
   line-height: 140%;
   text-align: center;
   margin-top: 40px;
+}
+
+.button {
+  display: inline-block;
+  padding: 9px 15px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  background: #FFFFFF;
+  color: #018ABE;
+}
+
+.button:hover {
+  background-color: antiquewhite;
+  color: #162831;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .sessions-w {
@@ -590,5 +593,111 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.record-w {
+  width: 100%;
+  padding: 150px 0px 90px 0px;
+}
+
+.record {
+  max-width: 1296px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.record__location-img {
+  max-width: 856px;
+  width: 100%;
+  min-height: 604px;
+}
+
+.record__items-w {
+  max-width: 392px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.record__items {
+  max-width: inherit;
+  width: inherit;
+  background: #018ABE;
+  border-radius: 10px;
+  padding: 35px 45px;
+}
+
+.record__items:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.record__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.record__description {
+  margin-bottom: 30px;
+}
+
+.record__description-addres {
+  display: block;
+  position: relative;
+  margin-bottom: 22px;
+  padding-left: 40px;
+}
+
+.record__description-addres::before {
+  content: '';
+  position: absolute;
+  background: url(../images/icon-location.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
+
+.record__description-metro {
+  display: block;
+  position: relative;
+  margin-bottom: 22px;
+  padding-left: 40px;
+}
+
+.record__description-metro::before {
+  content: '';
+  position: absolute;
+  background: url(../images/icon-metro.png) no-repeat;
+  width: 20px;
+  height: 16px;
+  top: 0;
+  left: 0;
+}
+
+.record__description-record {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+}
+
+.record__description-record::before {
+  content: '';
+  position: absolute;
+  background: url(../images/icon-case.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=styles.css.map */

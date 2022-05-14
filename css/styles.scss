@@ -1,473 +1,567 @@
-        @import 'reset.scss';
-        @import 'fonts.scss';
-        @import 'mixin.scss';
-        // @include mq(xxl) {}
-        // @include mq(xl) {}
-        // @include mq(lg) {}
-        // @include mq(md) {}
-        // @include mq(sm) {}
-        %Proxima-Nova300 {
-            font-family: 'Proxima Nova', sans-serif;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 140%;
-            color: #FFFFFF;
-        }
-        
-        %Proxima-Nova400 {
-            font-family: 'Proxima Nova', sans-serif;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 135%;
-            color: #FFFFFF;
-        }
-        
-        %proxima-Nova600 {
-            font-family: 'Proxima Nova', sans-serif;
-            font-weight: 600;
-            font-size: 13px;
-            line-height: 140%;
-            color: #FFFFFF;
-        }
-        
-        %Proxima-Nova700 {
-            font-family: 'Proxima Nova', sans-serif;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 140%;
-            color: #FFFFFF;
-        }
-        
-        %El-Messiri700 {
-            font-family: 'El Messiri', sans-serif;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 140%;
-            color: #FFFFFF;
-        }
-        
-        body {
-            background-color: #162831;
-        }
-        
-        .header-w {
-            width: 100%;
-            padding-top: 30px;
-            position: relative;
-        }
-        
-        .header {
-            width: 100%;
-            &__top-inner {
-                max-width: 1298px;
+            @import 'reset.scss';
+            @import 'fonts.scss';
+            @import 'mixin.scss';
+            // @include mq(xxl) {}
+            // @include mq(xl) {}
+            // @include mq(lg) {}
+            // @include mq(md) {}
+            // @include mq(sm) {}
+            %Proxima-Nova300 {
+                font-family: 'Proxima Nova', sans-serif;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+            
+            %Proxima-Nova400 {
+                font-family: 'Proxima Nova', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 135%;
+                color: #FFFFFF;
+            }
+            
+            %proxima-Nova600 {
+                font-family: 'Proxima Nova', sans-serif;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+            
+            %Proxima-Nova700 {
+                font-family: 'Proxima Nova', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+            
+            %El-Messiri700 {
+                font-family: 'El Messiri', sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 140%;
+                color: #FFFFFF;
+            }
+            
+            body {
+                background-color: #162831;
+            }
+            
+            .header-w {
                 width: 100%;
-                margin: 0 auto;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                padding-top: 30px;
+                position: relative;
             }
-            &__logo-link {}
-            &__logo {}
-            &__top-main {}
-            .nav {
-                &__list {
+            
+            .header {
+                width: 100%;
+                &__top-inner {
+                    max-width: 1298px;
+                    width: 100%;
+                    margin: 0 auto;
                     display: flex;
+                    justify-content: space-between;
+                    align-items: center;
                 }
-                &__item {
-                    list-style: none;
-                    &:not(:first-child) {
-                        margin-left: 50px;
+                &__logo-link {}
+                &__logo {}
+                &__top-main {}
+                .nav {
+                    &__list {
+                        display: flex;
+                    }
+                    &__item {
+                        list-style: none;
+                        &:not(:first-child) {
+                            margin-left: 50px;
+                        }
+                    }
+                    &__item-link {
+                        @extend %Proxima-Nova400;
+                        text-decoration: none;
+                        &:hover {
+                            color: bisque;
+                        }
                     }
                 }
-                &__item-link {
-                    @extend %Proxima-Nova400;
-                    text-decoration: none;
-                    &:hover {
-                        color: bisque;
+                .button {
+                    color: #FFFFFF;
+                    &--color-blue {
+                        background-color: #018ABE;
                     }
                 }
+                &__content {
+                    max-width: 1298px;
+                    width: 100%;
+                    min-height: 600px;
+                    background-image: url(../images/header__img.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin: 0 auto;
+                    margin-top: 50px;
+                    display: flex;
+                    justify-content: center;
+                }
+                &__content-title {
+                    margin-top: 136px;
+                    max-width: 587px;
+                    width: 100%;
+                }
+                &__title-top {
+                    position: relative;
+                    @extend %El-Messiri700;
+                    text-align: center;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background: url(../images/petal-left.png)no-repeat;
+                        width: 28px;
+                        height: 14px;
+                        left: 94px;
+                        top: 8px;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background: url(../images/petal-right.png)no-repeat;
+                        width: 28px;
+                        height: 14px;
+                        right: 94px;
+                        top: 8px;
+                    }
+                }
+                &__title-bottom {
+                    @extend %El-Messiri700;
+                    font-size: 64px;
+                    line-height: 140%;
+                    text-align: center;
+                    margin-top: 40px;
+                }
             }
-            &__top-button {
-                text-align: center;
-            }
+            
             .button {
                 display: inline-block;
                 padding: 9px 15px;
                 border-radius: 3px;
                 text-decoration: none;
+                text-align: center;
+                background: #FFFFFF;
+                color: #018ABE;
                 @extend %proxima-Nova600;
                 &:hover {
                     background-color: antiquewhite;
                     color: #162831;
                     transition: all 0.4s ease;
                 }
-                &--color-blue {
-                    background-color: #018ABE;
-                }
             }
-            &__content {
+            
+            .sessions-w {
+                width: 100%;
+                padding: 150px 0px;
+            }
+            
+            .sessions {
                 max-width: 1298px;
                 width: 100%;
-                min-height: 600px;
-                background-image: url(../images/header__img.png);
-                background-repeat: no-repeat;
-                background-size: cover;
                 margin: 0 auto;
-                margin-top: 50px;
+                &__title {
+                    text-align: center;
+                    margin-bottom: 100px;
+                }
+                &__items {
+                    max-width: inherit;
+                    width: inherit;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                &__item-left {
+                    position: relative;
+                    max-width: 416px;
+                    width: 100%;
+                    min-height: 540px;
+                    background: url(../images/sessons-img-big.png) no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    align-items: flex-end;
+                    padding: 0px 0px 50px 40px;
+                    @extend %El-Messiri700;
+                    font-size: 24px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 7px;
+                        background-color: #018ABE;
+                        border-radius: 0px 0px 10px 10px;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+                &__item-title {}
+                &__item-center {
+                    max-width: 416px;
+                    width: 100%;
+                }
+                &__item-top {
+                    position: relative;
+                    max-width: inherit;
+                    width: inherit;
+                    min-height: 258px;
+                    background: url(../images/sessons-img-little.png) no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    align-items: flex-end;
+                    @extend %El-Messiri700;
+                    font-size: 24px;
+                    padding: 0px 40px 30px 40px;
+                    margin-bottom: 24px;
+                }
+                &__item-title {}
+                &__item-bottom {
+                    position: relative;
+                    max-width: inherit;
+                    width: inherit;
+                    min-height: 258px;
+                    background: url(../images/sessons-img-little.png) no-repeat;
+                    background-size: cover;
+                    display: flex;
+                    align-items: flex-end;
+                    @extend %El-Messiri700;
+                    font-size: 24px;
+                    padding: 0px 40px 30px 40px;
+                }
+                &__item-right {
+                    max-width: 416px;
+                    width: 100%;
+                }
+            }
+            
+            .title-w {
+                width: 100%;
                 display: flex;
                 justify-content: center;
             }
-            &__content-title {
-                margin-top: 136px;
-                max-width: 587px;
-                width: 100%;
-            }
-            &__title-top {
+            
+            .title {
                 position: relative;
+                display: block;
                 @extend %El-Messiri700;
-                text-align: center;
+                font-size: 42px;
                 &::before {
                     content: '';
                     position: absolute;
-                    background: url(../images/petal-left.png)no-repeat;
+                    background: url(../images/petal-blue-left.png) no-repeat;
                     width: 28px;
                     height: 14px;
-                    left: 94px;
-                    top: 8px;
+                    left: -72px;
+                    top: 20px;
                 }
                 &::after {
                     content: '';
                     position: absolute;
-                    background: url(../images/petal-right.png)no-repeat;
+                    background: url(../images/petal-blue-right.png) no-repeat;
                     width: 28px;
                     height: 14px;
-                    right: 94px;
-                    top: 8px;
+                    right: -72px;
+                    top: 20px;
                 }
             }
-            &__title-bottom {
-                @extend %El-Messiri700;
-                font-size: 64px;
-                line-height: 140%;
-                text-align: center;
-                margin-top: 40px;
-            }
-        }
-        
-        .sessions-w {
-            width: 100%;
-            padding: 150px 0px;
-        }
-        
-        .sessions {
-            max-width: 1298px;
-            width: 100%;
-            margin: 0 auto;
-            &__title {
-                text-align: center;
-                margin-bottom: 100px;
-            }
-            &__items {
-                max-width: inherit;
-                width: inherit;
-                display: flex;
-                justify-content: space-between;
-            }
-            &__item-left {
-                position: relative;
-                max-width: 416px;
+            
+            .reviews-w {
                 width: 100%;
-                min-height: 540px;
-                background: url(../images/sessons-img-big.png) no-repeat;
-                background-size: cover;
-                display: flex;
-                align-items: flex-end;
-                padding: 0px 0px 50px 40px;
-                @extend %El-Messiri700;
-                font-size: 24px;
-                &::before {
-                    content: '';
-                    position: absolute;
+            }
+            
+            .reviews {
+                max-width: 1736px;
+                width: 100%;
+                margin: 0 auto;
+                &__title {}
+                .title-w {
+                    margin-bottom: 100px;
+                }
+                &__items {
+                    max-width: inherit;
+                    width: inherit;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                &__review {
+                    max-width: 500px;
                     width: 100%;
-                    height: 7px;
+                    min-height: 276px;
                     background-color: #018ABE;
-                    border-radius: 0px 0px 10px 10px;
-                    bottom: 0;
-                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 10px;
+                    padding: 40px 0px 71px 0px;
+                    margin-bottom: 60px;
+                    // opacity: 0.3;
+                    &:last-child {
+                        padding-bottom: 57px;
+                    }
+                }
+                &__review-inner {
+                    max-width: 410px;
+                    width: 100%
+                }
+                &__review-clientname {
+                    @extend %Proxima-Nova700;
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
+                &__review-text {
+                    @extend %Proxima-Nova300;
+                    font-size: 10px;
+                }
+                .dots-w {
+                    width: inherit;
+                    display: flex;
+                    justify-content: center;
+                }
+                .dot {
+                    width: 16px;
+                    height: 16px;
+                    background: #FFFFFF;
+                    opacity: 0.4;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    &:not(:first-child) {
+                        margin-left: 20px;
+                    }
                 }
             }
-            &__item-title {}
-            &__item-center {
-                max-width: 416px;
+            
+            .description-w {
                 width: 100%;
+                padding: 150px 0px;
             }
-            &__item-top {
-                position: relative;
-                max-width: inherit;
-                width: inherit;
-                min-height: 258px;
-                background: url(../images/sessons-img-little.png) no-repeat;
-                background-size: cover;
-                display: flex;
-                align-items: flex-end;
-                @extend %El-Messiri700;
-                font-size: 24px;
-                padding: 0px 40px 30px 40px;
-                margin-bottom: 24px;
-            }
-            &__item-title {}
-            &__item-bottom {
-                position: relative;
-                max-width: inherit;
-                width: inherit;
-                min-height: 258px;
-                background: url(../images/sessons-img-little.png) no-repeat;
-                background-size: cover;
-                display: flex;
-                align-items: flex-end;
-                @extend %El-Messiri700;
-                font-size: 24px;
-                padding: 0px 40px 30px 40px;
-            }
-            &__item-right {
-                max-width: 416px;
+            
+            .description {
+                max-width: 1076px;
                 width: 100%;
-            }
-        }
-        
-        .title-w {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-        
-        .title {
-            position: relative;
-            display: block;
-            @extend %El-Messiri700;
-            font-size: 42px;
-            &::before {
-                content: '';
-                position: absolute;
-                background: url(../images/petal-blue-left.png) no-repeat;
-                width: 28px;
-                height: 14px;
-                left: -72px;
-                top: 20px;
-            }
-            &::after {
-                content: '';
-                position: absolute;
-                background: url(../images/petal-blue-right.png) no-repeat;
-                width: 28px;
-                height: 14px;
-                right: -72px;
-                top: 20px;
-            }
-        }
-        
-        .reviews-w {
-            width: 100%;
-        }
-        
-        .reviews {
-            max-width: 1736px;
-            width: 100%;
-            margin: 0 auto;
-            &__title {}
-            .title-w {
-                margin-bottom: 100px;
-            }
-            &__items {
-                max-width: inherit;
-                width: inherit;
-                display: flex;
-                justify-content: space-between;
-            }
-            &__review {
-                max-width: 500px;
-                width: 100%;
-                min-height: 276px;
-                background-color: #018ABE;
-                display: flex;
-                justify-content: center;
-                border-radius: 10px;
-                padding: 40px 0px 71px 0px;
-                margin-bottom: 60px;
-                // opacity: 0.3;
-                &:last-child {
-                    padding-bottom: 57px;
+                margin: 0 auto;
+                .title-w {
+                    margin-bottom: 100px;
+                }
+                &__items {
+                    max-width: inherit;
+                    width: inherit;
+                }
+                &__items-top {
+                    max-width: inherit;
+                    width: inherit;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 100px;
+                }
+                &__massage {
+                    max-width: 466px;
+                    width: 100%;
+                    margin: 66px 0px 65px 0px;
+                }
+                &__massage-title {
+                    @extend %Proxima-Nova700;
+                    font-size: 24px;
+                    margin-bottom: 30px
+                }
+                &__massage-text {
+                    @extend %Proxima-Nova300;
+                    font-size: 16px;
+                }
+                &__itemstop-img {
+                    max-width: 526px;
+                    width: 100%;
+                    height: 365px;
+                }
+                &__items-bottom {
+                    max-width: inherit;
+                    width: inherit;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                &__itemsbottom-img {
+                    max-width: 526px;
+                    width: 100%;
+                    height: 400px;
+                }
+                &__hydrotherapy {
+                    max-width: 466px;
+                    width: 100%;
+                    margin: 17px 0px 17px 0px;
+                }
+                &__hydrotherapy-title {
+                    @extend %Proxima-Nova700;
+                    font-size: 24px;
+                    margin-bottom: 30px
+                }
+                &__hydrotherapy-text {
+                    @extend %Proxima-Nova300;
+                    font-size: 16px;
                 }
             }
-            &__review-inner {
-                max-width: 410px;
-                width: 100%
+            
+            .price-w {
+                width: 100%;
+                padding: 150px 0px;
             }
-            &__review-clientname {
-                @extend %Proxima-Nova700;
-                font-size: 16px;
-                margin-bottom: 15px;
-            }
-            &__review-text {
-                @extend %Proxima-Nova300;
-                font-size: 10px;
-            }
-            .dots-w {
-                width: inherit;
-                display: flex;
-                justify-content: center;
-            }
-            .dot {
-                width: 16px;
-                height: 16px;
-                background: #FFFFFF;
-                opacity: 0.4;
-                border-radius: 3px;
-                cursor: pointer;
-                &:not(:first-child) {
-                    margin-left: 20px;
+            
+            .price {
+                max-width: 1076px;
+                width: 100%;
+                margin: 0 auto;
+                .title-w {
+                    margin-bottom: 100px;
+                }
+                &__items {
+                    max-width: inherit;
+                    width: inherit;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                &__description-sessons {
+                    max-width: 416px;
+                    width: 100%;
+                    margin: 103px 0px;
+                }
+                &__list {
+                    max-width: inherit;
+                    width: inherit;
+                    display: flex;
+                    justify-content: space-between;
+                    &:not(:last-child) {
+                        margin-bottom: 31px;
+                    }
+                }
+                &__sesson {
+                    position: relative;
+                    display: block;
+                    @extend %Proxima-Nova400;
+                    font-size: 18px;
+                    padding-left: 38px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background: url(../images/price-petal.png) no-repeat;
+                        width: 18px;
+                        height: 9px;
+                        top: 7px;
+                        left: 0;
+                    }
+                }
+                &__summ {
+                    @extend %El-Messiri700;
+                    font-size: 18px;
+                }
+                &__giftcertificate {
+                    max-width: 526px;
+                    width: 100%;
+                }
+                &__giftcertificate-img {
+                    max-width: inherit;
+                    width: inherit;
+                    min-height: 396px;
+                    margin-bottom: 30px;
+                }
+                &__giftcertificate-subtitle-w {
+                    max-width: inherit;
+                    width: inherit;
+                    display: flex;
+                    justify-content: center;
+                }
+                &__giftcertificate-subtitle {
+                    @extend %El-Messiri700;
                 }
             }
-        }
-        
-        .description-w {
-            width: 100%;
-            padding: 150px 0px;
-        }
-        
-        .description {
-            max-width: 1076px;
-            width: 100%;
-            margin: 0 auto;
-            .title-w {
-                margin-bottom: 100px;
+            
+            .record-w {
+                width: 100%;
+                padding: 150px 0px 90px 0px;
             }
-            &__items {
-                max-width: inherit;
-                width: inherit;
-            }
-            &__items-top {
-                max-width: inherit;
-                width: inherit;
+            
+            .record {
+                max-width: 1296px;
+                width: 100%;
+                margin: 0 auto;
                 display: flex;
                 justify-content: space-between;
-                margin-bottom: 100px;
-            }
-            &__massage {
-                max-width: 466px;
-                width: 100%;
-                margin: 66px 0px 65px 0px;
-            }
-            &__massage-title {
-                @extend %Proxima-Nova700;
-                font-size: 24px;
-                margin-bottom: 30px
-            }
-            &__massage-text {
-                @extend %Proxima-Nova300;
-                font-size: 16px;
-            }
-            &__itemstop-img {
-                max-width: 526px;
-                width: 100%;
-                height: 365px;
-            }
-            &__items-bottom {
-                max-width: inherit;
-                width: inherit;
-                display: flex;
-                justify-content: space-between;
-            }
-            &__itemsbottom-img {
-                max-width: 526px;
-                width: 100%;
-                height: 400px;
-            }
-            &__hydrotherapy {
-                max-width: 466px;
-                width: 100%;
-                margin: 17px 0px 17px 0px;
-            }
-            &__hydrotherapy-title {
-                @extend %Proxima-Nova700;
-                font-size: 24px;
-                margin-bottom: 30px
-            }
-            &__hydrotherapy-text {
-                @extend %Proxima-Nova300;
-                font-size: 16px;
-            }
-        }
-        
-        .price-w {
-            width: 100%;
-            padding: 150px 0px;
-        }
-        
-        .price {
-            max-width: 1076px;
-            width: 100%;
-            margin: 0 auto;
-            .title-w {
-                margin-bottom: 100px;
-            }
-            &__items {
-                max-width: inherit;
-                width: inherit;
-                display: flex;
-                justify-content: space-between;
-            }
-            &__description-sessons {
-                max-width: 416px;
-                width: 100%;
-                margin: 103px 0px;
-            }
-            &__list {
-                max-width: inherit;
-                width: inherit;
-                display: flex;
-                justify-content: space-between;
-                &:not(:last-child) {
-                    margin-bottom: 31px;
+                &__location-img {
+                    max-width: 856px;
+                    width: 100%;
+                    min-height: 604px;
+                }
+                &__items-w {
+                    max-width: 392px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
+                &__items {
+                    max-width: inherit;
+                    width: inherit;
+                    background: #018ABE;
+                    border-radius: 10px;
+                    padding: 35px 45px;
+                    &:not(:last-child) {
+                        margin-bottom: 24px;
+                    }
+                }
+                &__items-inner {}
+                &__title {
+                    @extend %El-Messiri700;
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+                &__description {
+                    margin-bottom: 30px;
+                }
+                &__description-addres {
+                    display: block;
+                    position: relative;
+                    @extend %Proxima-Nova400;
+                    margin-bottom: 22px;
+                    padding-left: 40px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background: url(../images/icon-location.png) no-repeat;
+                        width: 20px;
+                        height: 20px;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+                &__description-metro {
+                    display: block;
+                    position: relative;
+                    @extend %Proxima-Nova400;
+                    margin-bottom: 22px;
+                    padding-left: 40px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background: url(../images/icon-metro.png) no-repeat;
+                        width: 20px;
+                        height: 16px;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+                &__description-record {
+                    display: block;
+                    position: relative;
+                    @extend %Proxima-Nova400;
+                    padding-left: 40px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background: url(../images/icon-case.png) no-repeat;
+                        width: 20px;
+                        height: 20px;
+                        top: 0;
+                        left: 0;
+                    }
                 }
             }
-            &__sesson {
-                position: relative;
-                display: block;
-                @extend %Proxima-Nova400;
-                font-size: 18px;
-                padding-left: 38px;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    background: url(../images/price-petal.png) no-repeat;
-                    width: 18px;
-                    height: 9px;
-                    top: 7px;
-                    left: 0;
-                }
-            }
-            &__summ {
-                @extend %El-Messiri700;
-                font-size: 18px;
-            }
-            &__giftcertificate {
-                max-width: 526px;
-                width: 100%;
-            }
-            &__giftcertificate-img {
-                max-width: inherit;
-                width: inherit;
-                min-height: 396px;
-                margin-bottom: 30px;
-            }
-            &__giftcertificate-subtitle-w {
-                max-width: inherit;
-                width: inherit;
-                display: flex;
-                justify-content: center;
-            }
-            &__giftcertificate-subtitle {
-                @extend %El-Messiri700;
-            }
-        }
