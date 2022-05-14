@@ -331,6 +331,10 @@
                     &:not(:first-child) {
                         margin-left: 20px;
                     }
+                    &--background-active {
+                        background-color: #FFFFFF;
+                        opacity: 0.9;
+                    }
                 }
             }
             
@@ -563,5 +567,27 @@
                         top: 0;
                         left: 0;
                     }
+                }
+            }
+            
+            .footer-w {
+                width: 100%;
+            }
+            
+            .footer {
+                width: 100%;
+                padding-bottom: 30px;
+                &__inner {
+                    max-width: 1296px;
+                    width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                &__item-left {
+                    @extend %Proxima-Nova400;
+                }
+                &__item-right {
+                    @extend %Proxima-Nova400;
                 }
             }
