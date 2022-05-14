@@ -38,7 +38,7 @@
   color: #FFFFFF;
 }
 
-.header .nav__item-link {
+.header .nav__item-link, .price__sesson {
   font-family: 'Proxima Nova', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -62,7 +62,7 @@
   color: #FFFFFF;
 }
 
-.header__title-top, .header__title-bottom, .sessions__item-left, .sessions__item-top, .sessions__item-bottom, .title {
+.header__title-top, .header__title-bottom, .sessions__item-left, .sessions__item-top, .sessions__item-bottom, .title, .price__summ, .price__giftcertificate-subtitle {
   font-family: 'El Messiri', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -499,5 +499,96 @@ body {
 
 .description__hydrotherapy-text {
   font-size: 16px;
+}
+
+.price-w {
+  width: 100%;
+  padding: 150px 0px;
+}
+
+.price {
+  max-width: 1076px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.price .title-w {
+  margin-bottom: 100px;
+}
+
+.price__items {
+  max-width: inherit;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price__description-sessons {
+  max-width: 416px;
+  width: 100%;
+  margin: 103px 0px;
+}
+
+.price__list {
+  max-width: inherit;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price__list:not(:last-child) {
+  margin-bottom: 31px;
+}
+
+.price__sesson {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  padding-left: 38px;
+}
+
+.price__sesson::before {
+  content: '';
+  position: absolute;
+  background: url(../images/price-petal.png) no-repeat;
+  width: 18px;
+  height: 9px;
+  top: 7px;
+  left: 0;
+}
+
+.price__summ {
+  font-size: 18px;
+}
+
+.price__giftcertificate {
+  max-width: 526px;
+  width: 100%;
+}
+
+.price__giftcertificate-img {
+  max-width: inherit;
+  width: inherit;
+  min-height: 396px;
+  margin-bottom: 30px;
+}
+
+.price__giftcertificate-subtitle-w {
+  max-width: inherit;
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=styles.css.map */
