@@ -287,13 +287,13 @@ body {
         width: inherit;
     }
     /* Слайдер */
-    .slick-slider {
+    & .slick-slider {
         /* Слайдер запущен */
         & .slick-initialized {}
         /* Слайдер с точками */
         & .slick-dotted {}
     }
-    .slick-list {
+    & .slick-list {
         overflow: hidden;
     }
     /* Лента слайдов */
@@ -301,17 +301,6 @@ body {
         display: flex;
         justify-content: space-between;
     }
-    /* Слайд */
-    .slick-slide {}
-    /* Слайд активный (показывается) */
-    &.slick-active {}
-    /* Слайд основной */
-    & .slick-current {}
-    /* Слайд по центру */
-    & .slick-center {}
-    /* Клонированный слайд */
-    & .slick-cloned {}
-    /* Точки (булиты) */
     & .slick-dots {
         display: flex;
         align-items: center;
