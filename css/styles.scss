@@ -83,7 +83,9 @@ body {
             @extend %Proxima-Nova400;
             text-decoration: none;
             &:hover {
+                text-decoration: underline bisque;
                 color: bisque;
+                transition: all 0.3s ease
             }
         }
     }
