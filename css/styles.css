@@ -122,8 +122,8 @@ body {
   -webkit-text-decoration: underline bisque;
           text-decoration: underline bisque;
   color: bisque;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease3;
+  transition: all 0.3s ease3;
 }
 
 .header .button {
