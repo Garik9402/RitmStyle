@@ -288,13 +288,6 @@ body {
         max-width: inherit;
         width: inherit;
     }
-    /* Слайдер */
-    & .slick-slider {
-        /* Слайдер запущен */
-        & .slick-initialized {}
-        /* Слайдер с точками */
-        & .slick-dotted {}
-    }
     & .slick-list {
         overflow: hidden;
     }
