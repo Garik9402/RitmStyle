@@ -1,1 +1,1 @@
-# RitmStyle
+# ritm-style
